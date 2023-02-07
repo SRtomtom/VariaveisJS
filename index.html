@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de variaveis</title>
+</head>
+
+<body>
+    <script>
+
+        //  String 
+        //variaveis do tipo texto
+        //precisa sempre precisa estar entre aspas ""
+            console.log("Washington")
+            console.log("Washington da Silva Rodrigues")
+            console.log("Praia Grande - SP")
+
+        //COLOCANDO UMA BARRA INVERTIDA É POSSIVEL COLOCAR UMA ASPAS NO TEXTO
+            console.log(" ESC\"APE\" ")
+
+        //***********************************************************************************************************************
+
+        //Number
+        //variaveis do tipo número
+        //não a necessidade de aspas
+        console.log(1)
+        console.log(1.2) //COM PONTO(.) VOCÊ CRIA UM VALOR QUEBRADO (EX. 1,2)
+        console.log(.62) //NÃO HÁ NECESSIDADE DE COLOCAR UM ZERO(0) NA ESQUERDA DO PONTO, O JS JA RECONHECE COMO ZERO(0)
+
+        console.log(1,2) //COM VIRGULA(,) VOCÊ ADICIONA DOIS VALORES DIFERENTES
+
+        console.log(Math.PI) //AO COLOCAR MATH, CRIA UMA BIBLIOTECA DE VALORES, EX: VALOR de PI (Math.PI)
+
+        //***********************************************************************************************************************
+
+        //Boolean
+        //variaveis do tipo Boolean (verdadeiro/falso)
+        //não precisam de aspas
+        console.log(true) //VERDADEIRO
+        console.log(false) //FALSO
+
+        //UTILIZADO PARA EXPRESSAR QUANDO HOUVER DOIS ESTADOS/OPÇÕES
+        //EX:
+        //CLIENTE CADASTRADO ? SIM OU NÃO
+        //CADASTRO FEITO ? SIM OU NÃO
+        //LAMPADA LIGADA ? SIM OU NÃO
+
+        //***********************************************************************************************************************
+
+        //Infinity
+        //variaveis do tipo INFINITO
+        //não precisam de aspas
+        console.log(Infinity) //PARA EXPRESSAR INFINITUDE
+        console.log(1 / 0) //EXEMPLO: PODE DAR PROBLEMA AO NUMERO SER DIVIDIDO POR 0
+        console.log(typeof Infinity)
+
+        //EX DE QUANDO PODE DAR ERRADO:
+        // IMC = ALTURA / PESO * PESO
+
+        //SE O USUARIO COLOCAR PESO SENDO 0 PODE DAR ERRO E DEVE SER AJUSTADO DURANTE O RESTANTE DA PROGRAMAÇÃO
+
+        //***********************************************************************************************************************
+
+        //NaN (not a number)
+        console.log(NaN) 
+        console.log("A" / 2)
+        console.log(typeof NaN)
+
+        //aparece quando o programa não consegue fazer uma expressão como numero
+
+        //***********************************************************************************************************************
+
+        //null e undefined
+        //nulo e indefinido
+
+        console.log(null) //AUSENCIA DE VALOR
+        console.log(undefined) //VALOR NÃO DEFINIDO
+
+        console.log(typeof null) //É DEFINIDO COMO VARIAVEL OBJETO
+        console.log(typeof undefined) //TEM UMA DEFINIÇÃO PROPRIA "IDEFINIDO"
+
+        console.log(null == undefined) //FAZENDO UMA TROCA DE VALORES
+        console.log(null === undefined) //SE COMPARANDO NULL COM UNDEFINED
+
+        //***********************************************************************************************************************
+
+        //OBJECT
+        //é representado por {}
+        //ao colocar mais de uma variavel, é necessario separar por virgula(,)
+
+        console.log({propriedade: "valor"}) //NO LUGAR DE "VALOR" PODE SER COLOCADO QUALQUER UMA DAS VARIAVEIS ACIMA
+        
+
+        console.log({
+
+            nome: "Washington",
+            idade: 22,
+            endereço: {
+                rua: "AV alguma",
+                bairro: "Boqueirão",
+                cidade: "Praia-Grande",
+            },
+        })
+
+        //TIPO DE DADO VOLTADO PARA BACK-END
+        //MAIS UTILIZADO COM NODE OU REACT
+
+
+
+        //***********************************************************************************************************************
+
+        //ARRAY
+        //vetores (tradução)
+        //é utilizado colocando []
+
+        console.log([1, 2, 3]) 
+        console.log([
+            1,
+            "A",
+            2,
+            "B"
+        ])
+
+        console.log([
+            1,
+            "A",
+            {
+                nome: "washington",
+                sobrenome:"Rodrigues"
+            }
+        ])
+
+        //POSSUI INDICE
+        //É POSSIVEL UTILIZAR DE FORMA MAIS COMPLEXA
+
+        //***********************************************************************************************************************
+
+        //DATE
+
+        console.log(Date())     //data e hora corrente => new Date()
+        console.log(new Date()) //data e hora corrent
+
+        console.log(new Date(2022, 03, 22)) //data especifica e hora corrente
+        console.log(new Date(2022, 03, 22, 10, 20, 59)) //data e hora especifica
+
+
+        //PARA O JS EM new Date() => JANEIRO COMEÇA EM 0
+
+    </script>
+
+    <H1>
+        Olhar todo o código e console
+    </H1>
+
+</body>
+
+</html>
